@@ -1,0 +1,174 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #0b0e10;
+  position: fixed;
+  width: 96%;
+  z-index: 10;
+}
+
+.logo img {
+  height: 40px;
+  filter: none;
+  cursor: pointer;
+}
+
+nav {
+  padding: 0 2rem;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.navbar nav ul {
+  font-family: "Lexend Giga", sans-serif;
+  font-weight: 600;
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+.navbar a:hover::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: wheat;
+  color: wheat;
+  animation: underline 0.4s ease;
+}
+
+.navbar a.active-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: wheat;
+}
+
+.navbar a.active-link {
+  color: wheat;
+}
+
+@keyframes underline {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+.icons {
+  display: flex;
+  gap: 2rem;
+}
+
+.icons a {
+  background-color: #121b20;
+  color: white;
+  transition: all 0.2s;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons a:hover {
+  color: wheat;
+  transform: scale(1.1);
+}
+
+.nav-cart-count {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -11px;
+  margin-left: -50px;
+  border-radius: 11px;
+  font-size: 11px;
+  background: red;
+  color: white;
+  z-index: 1;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    position: relative;
+    padding: 1rem;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 70%;
+    height: 100vh;
+    background-color: #121b20;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 100;
+    border-radius: 0;
+  }
+
+  nav.active {
+    left: 0;
+  }
+
+  .navbar nav ul {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+    z-index: 101;
+  }
+
+  .menu-toggle span {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease;
+  }
+
+  .menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+  }
+
+}

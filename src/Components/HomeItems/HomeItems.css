@@ -1,0 +1,71 @@
+.product {
+  background-color: #c1d7c359;
+  min-height: 100vh;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.product.animate-out {
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 1s ease-out;
+}
+
+.product.animate-in {
+  transform: translateY(0);
+  opacity: 1;
+  transition: all 1s ease-out;
+}
+
+.product-container {
+  transform: translateY(50px);
+  opacity: 0;
+  transition: transform 0.8s cubic-bezier(0.25, 0.8, 0.25, 1),
+    opacity 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.product-container.loaded {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.shoes-section {
+  margin: 50px 0;
+  padding: 0 20px;
+}
+
+.shoes-section h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #0b0e10;
+  font-weight: 700;
+}
+
+.home-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+  justify-content: center;
+}
+
+/* Responsive design */
+@media (min-width: 768px) {
+  .home-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .home-items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1280px) {
+  .home-items {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
