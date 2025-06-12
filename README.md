@@ -7,17 +7,17 @@ This is a mini e-commerce shoe website built with **React.js**. It lets users br
 
 ---
 
-## 🔥 Features
+##  Features
 
-- 🛍️ List of stylish shoes with images and names
-- ➕ Add and remove products from the cart
-- 💵 Real-time total amount calculation
-- 💻 Responsive design for mobile and desktop
-- 🎯 Simple and clean UI
+-  List of stylish shoes with images and names
+-  Add and remove products from the cart
+-  Real-time total amount calculation
+-  Responsive design for mobile and desktop
+-  Simple and clean UI
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - React.js
 - HTML5 & CSS3
@@ -26,7 +26,7 @@ This is a mini e-commerce shoe website built with **React.js**. It lets users br
 
 ---
 
-## 📸 Screenshots
+##  Screenshots
 
 *(Add your screenshots here)*  
 Example:
@@ -36,13 +36,13 @@ Example:
 
 ---
 
-## 🚀 How to Run Locally
+##  How to Run Locally
 
 1. Clone the repo  
    ```bash
    git clone https://github.com/your-username/shoe-store.git
 
-📚 Project Structure
+ Project Structure
 bash
 Copy
 Edit
