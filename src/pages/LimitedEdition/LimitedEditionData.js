@@ -9,7 +9,7 @@ import ca4 from '../../assets/images/casual/ca-4.jpg';
 const LimitedEditionData = [
     {
         id: 1,
-        name: 'Sporty Pink & Black Shoe',
+        name: 'Sporty Red & Black Shoe',
         image: sp7,
         price: 999,
     },
@@ -27,7 +27,7 @@ const LimitedEditionData = [
     },
     {
         id: 4,
-        name: 'Gray Teal Sports',
+        name: 'BlueTeal Sports',
         image: s4,
         price: 1699
     },

@@ -27,13 +27,13 @@ import s12 from '../images/sneakers/s12.jpg';
   }, 
   {
     id: 3,
-    name: 'Gray Teal Sports',
+    name: 'Lite Blue Sports',
     image: s3,
     price: 1499
   },
   {
     id: 4,
-    name: 'Gray Teal Sports',
+    name: 'BlueTeal Sports',
     image: s4,
     price: 1699
   },  
@@ -45,25 +45,25 @@ import s12 from '../images/sneakers/s12.jpg';
   }, 
   {
     id: 6,
-    name: 'Gray Black Asian',
+    name: 'Yellow Asian',
     image: s6,
     price: 1499
   }, 
   {
     id: 7,
-    name: 'Gray Black Asian',
+    name: 'Lite Gray Shoe',
     image: s7,
     price: 1599
   }, 
   {
     id: 8,
-    name: 'Gray Black Asian',
+    name: 'Black Asian',
     image: s8,
     price: 1399
   }, 
   {
     id: 9,
-    name: 'Gray Black Asian',
+    name: 'Navy Blue Teal',
     image: s9,
     price: 1299
   },

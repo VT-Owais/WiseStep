@@ -27,7 +27,7 @@ const TrendingData = [
     },
     {
         id: 3,
-        name: 'Gray Teal Sports',
+        name: 'Lite Blue Sports',
         image: s3,
         price: 1499
     },
@@ -39,13 +39,13 @@ const TrendingData = [
     },
     {
         id: 5,
-        name: 'Sporty Orange & Black Shoe',
+        name: 'Sporty Yellow & Black Shoe',
         image: sp2,
         price: 1299,
     },
     {
         id: 6,
-        name: 'Sporty Red & Black Shoe',
+        name: 'Dark Blue Shoe',
         image: sp3,
         price: 1499,
     },
