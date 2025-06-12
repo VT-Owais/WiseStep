@@ -1,7 +1,7 @@
 # WiseStep
 A simple and responsive e-commerce shoe store built using React.js. Users can view shoes, add or remove them from the cart, and see the total price. Clean UI and real-time cart updates.
 
-# Shoe Store - E-commerce React Project 👟
+# Shoe Store - E-commerce React Project 
 
 This is a mini e-commerce shoe website built with **React.js**. It lets users browse stylish shoes, add or remove them from the cart, and view the total cost in real-time.
 
