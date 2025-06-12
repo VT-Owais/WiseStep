@@ -26,22 +26,6 @@ This is a mini e-commerce shoe website built with **React.js**. It lets users br
 
 ---
 
-##  Screenshots
-
-*(Add your screenshots here)*  
-Example:
-- Home page with products  
-- Cart section with added items  
-- Total price display
-
----
-
-##  How to Run Locally
-
-1. Clone the repo  
-   ```bash
-   git clone https://github.com/your-username/shoe-store.git
-
  Project Structure
 bash
 Copy
