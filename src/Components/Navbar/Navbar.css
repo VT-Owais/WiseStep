@@ -15,14 +15,15 @@
   cursor: pointer;
 }
 
-nav {
+/* Desktop Navigation */
+.desktop-nav {
   padding: 0 2rem;
   height: 3.5rem;
   display: flex;
   align-items: center;
 }
 
-.navbar nav ul {
+.desktop-nav ul {
   font-family: "Lexend Giga", sans-serif;
   font-weight: 600;
   display: flex;
@@ -68,13 +69,14 @@ nav {
   from {
     width: 0
   }
-
+  
   to {
     width: 100%
   }
 }
 
-.icons {
+/* Desktop Icons */
+.desktop-icons {
   display: flex;
   gap: 2rem;
 }
@@ -89,6 +91,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .icons a:hover {
@@ -97,78 +100,156 @@ nav {
 }
 
 .nav-cart-count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
   width: 20px;
   height: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -11px;
-  margin-left: -50px;
-  border-radius: 11px;
+  border-radius: 50%;
   font-size: 11px;
   background: red;
   color: white;
   z-index: 1;
 }
 
+/* Mobile Styles */
+.mobile-header {
+  display: none;
+  align-items: center;
+  gap: 1rem;
+}
+
+.mobile-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.menu-toggle:hover {
+  color: wheat;
+}
+
+/* Mobile Navigation */
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 280px;
+  height: 100vh;
+  background-color: #121b20;
+  transition: right 0.3s ease;
+  z-index: 1000;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.mobile-nav.active {
+  right: 0;
+}
+
+.mobile-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-top: 80px;
+}
+
+.mobile-nav li {
+  border-bottom: 1px solid #2a3740;
+}
+
+.mobile-nav a {
+  display: block;
+  padding: 1.5rem 2rem;
+  color: white;
+  text-decoration: none;
+  font-family: "Lexend Giga", sans-serif;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.mobile-nav a:hover {
+  background-color: #2a3740;
+  color: wheat;
+}
+
+.mobile-nav a.active-link {
+  background-color: #2a3740;
+  color: wheat;
+  border-left: 4px solid wheat;
+}
+
+/* Mobile Overlay */
+.mobile-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+/* Hide mobile elements on desktop */
+.mobile-nav,
+.mobile-header {
+  display: none;
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   .navbar {
-    position: relative;
+    padding: 1rem 1.5rem;
+  }
+  
+  /* Hide desktop navigation */
+  .desktop-nav,
+  .desktop-icons {
+    display: none;
+  }
+  
+  /* Show mobile elements */
+  .mobile-header {
+    display: flex;
+  }
+  
+  .mobile-nav {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
     padding: 1rem;
   }
-
-  nav {
-    position: fixed;
-    top: 0;
-    left: -100%;
-    width: 70%;
-    height: 100vh;
-    background-color: #121b20;
-    flex-direction: column;
-    justify-content: center;
-    transition: all 0.3s ease;
-    z-index: 100;
-    border-radius: 0;
+  
+  .logo img {
+    height: 35px;
   }
-
-  nav.active {
-    left: 0;
+  
+  .mobile-nav {
+    width: 250px;
   }
-
-  .navbar nav ul {
-    flex-direction: column;
-    gap: 2rem;
-    align-items: center;
+  
+  .mobile-icons {
+    gap: 0.5rem;
   }
-
-  .menu-toggle {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-    cursor: pointer;
-    z-index: 101;
+  
+  .icons a {
+    width: 35px;
+    height: 35px;
   }
-
-  .menu-toggle span {
-    width: 100%;
-    height: 3px;
-    background-color: white;
-    transition: all 0.3s ease;
-  }
-
-  .menu-toggle.active span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-  }
-
-  .menu-toggle.active span:nth-child(2) {
-    opacity: 0;
-  }
-
-  .menu-toggle.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(7px, -6px);
-  }
-
 }
