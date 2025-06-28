@@ -22,6 +22,7 @@ Technologies Used
 
 HTML5 & CSS3
 JavaScript
+JSX
 Context API (for cart management)
 
 ----------------
