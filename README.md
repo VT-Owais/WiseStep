@@ -20,9 +20,9 @@ React.js
 
 Technologies Used
 
-HTML5 & CSS3
-JavaScript
+HTML5 & CSS3,
 JSX
+JavaScript
 Context API (for cart management)
 
 ----------------
